@@ -2,7 +2,8 @@
 # display command line options
 
 count=1
-for param in "$*"; do
-    echo "\$* Parameter #$count = $param"
-    count=$(( $count + 1 ))
+while [[ -n "" ]]; do
+    echo "Parameter #1 = "
+    count=2
+    shift
 done
